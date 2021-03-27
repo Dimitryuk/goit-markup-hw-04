@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --card-set-gap: 20px;
+  --grid-item: 3;
 }
 
 body {
@@ -347,9 +348,29 @@ li > .advantages {
   margin-bottom: 50px;
 }
 
+.clients-item-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
 .clients-list {
   display: flex;
-  justify-content: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.clients-list-item {
+  margin-right: 30px;
+}
+.clients-list :last-child {
+  margin-right: 0;
+}
+.clients-item-link > .icon {
+  fill: var(--primary-text-color);
 }
 
 /* Подвал */
